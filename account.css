@@ -271,6 +271,9 @@
 }
 
 @media (max-width: 990px) {
+    .forget-pass-box {
+        padding-bottom: 40px;
+    }
 
     .forget-pass-box form input:not(input:last-of-type),
     .forget-pass-box form input:last-of-type {

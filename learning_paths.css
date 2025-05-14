@@ -73,7 +73,7 @@
 @media (max-width: 480px) {
     .paths-box {
         grid-template-columns: repeat(1, 1fr);
-        margin-right: -158px;
+        margin-right: -170px;
     }
     .paths {
       text-align: center;

@@ -802,6 +802,14 @@ body {
     .courses {
         text-align: center;
     }
+
+      .more-cources {
+        margin-left: 17%;
+    }
+
+    .all-courses {
+        margin-left: 17%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -814,16 +822,33 @@ body {
     .courses {
         text-align: center;
     }
+
+    .more-cources {
+        margin-left: 23%;
+    }
+
+       .all-courses {
+        margin-left: 23%;
+    }
 }
 
 @media (max-width: 480px) {
     .cources-box {
         grid-template-columns: repeat(1, 1fr);
-        margin-right: -158px;
+        margin-right: -170px;
     }
 
     .courses {
         text-align: center;
+    }
+
+    
+      .more-cources {
+        margin-left: 36%;
+    }
+
+    .all-courses {
+        margin-left: 36%;
     }
 }
 
