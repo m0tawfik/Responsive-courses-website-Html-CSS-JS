@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Learn new skills with Edvanta - browse top courses in languages, tech, design, and more.">
+    <meta name="keywords" content="Edvanta, online courses, learn HTML, language courses">
+    <title>Edvanta</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="account.css">
+    <!-- Icon -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <!-- Main Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- FontAWesome.com -->
+    <script src="https://kit.fontawesome.com/39e383f6e9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="PC-header">
+        <div class="nav container">
+            <div class="logo">
+                <a href="index.html">Edvanta</a>
+            </div>
+            <div class="search">
+                <input type="search" name="header-search" id="inputSearch" placeholder="Search for...">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <ul>
+                <li><a href="learning_paths.html">Learning paths</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="sign_up.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- Mobile Header -->
+    <header class="Mobile-header">
+        <div class="container">
+            <div class="top">
+                <div class="logo">
+                    <a href="index.html">Edvanta</a>
+                </div>
+                <button id="openMobileList"><i class="fa-solid fa-bars"></i></button>
+            </div>
+            <div class="search">
+                <input type="search" name="header-search" id="inputSearch" placeholder="Search for...">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+        </div>
+        <div class="mobile-list" id="mobileList">
+            <button id="closeMobileList"><i class="fa-solid fa-xmark"></i></button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="sign_up.html">Sign Up</a></li>
+            </ul>
+        </div>
+    </header>
+    <!--======================== Home =====================-->
+    <section class="forget-pass-home">
+        <div class="forget-pass-box container">
+            <h3>Password Recovery</h3>
+            <form action="">
+                <input type="email" name="forget-pass-email" placeholder="Email Address" required>
+                <input type="submit" value="Forget Password">
+            </form>
+            <p>You already have an account? <a href="login.html">Login</a></p>
+        </div>
+    </section>
+    <!-- Footer -->
+    <section class="footer">
+        <div class="footer-logo">
+            <a href="index.html">Edvanta</a>
+        </div>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="">Join As A Lecturer</a>
+            <a href="">Prices</a>
+            <a href="">Privacy Policy</a>
+            <a href="">Terms And Conditions</a>
+        </div>
+        <div class="social-icon">
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        <footer>&copy; All rights reserved to Edvanta </footer>
+    </section>
+    <!-- =========================================== -->
+    <!-- Main File JS -->
+    <script src="script.js"></script>
+</body>

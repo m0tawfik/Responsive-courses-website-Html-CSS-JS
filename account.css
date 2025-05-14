@@ -1,0 +1,298 @@
+:root {
+    --transition: all 0.3s;
+    --mainColor: #003b79;
+    --secColor: #01152b;
+    --thColor: #04e474;
+}
+
+/* Sign Up */
+
+.form-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-box h3 {
+    font-size: 35px;
+    color: var(--secColor);
+}
+
+.sign-up-home form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+
+.sign-up-home form input:not(input:last-of-type) {
+    width: 320px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 5px;
+    outline: solid #818181 1px;
+}
+
+.sign-up-home form input:not(input:last-of-type):focus {
+    outline: solid var(--secColor) 1px;
+    box-shadow: 1px 0px 8px 0px var(--secColor);
+}
+
+.sign-up-home form input:last-of-type {
+    width: 200px;
+    text-decoration: none;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    color: white;
+    background-color: var(--secColor);
+    transition: var(--transition);
+    margin-left: 75%;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.sign-up-home form input:last-of-type:hover {
+    background-color: var(--mainColor);
+}
+
+
+@media (max-width: 990px) {
+    .sign-up-home form {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .sign-up-home form input:not(input:last-of-type) {
+        width: 500px;
+        height: 65px;
+        padding-left: 10px;
+    }
+
+    .sign-up-home form input:last-of-type {
+        margin-left: 25%;
+    }
+}
+
+@media (max-width: 768px) {
+    .sign-up-home form {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .sign-up-home form input:not(input:last-of-type) {
+        width: 320px;
+    }
+
+    .sign-up-home form input:last-of-type {
+        margin-left: 18%;
+    }
+}
+
+@media (max-width: 480px) {
+    .sign-up-home form {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 22px;
+    }
+
+    .sign-up-home form input:not(input:last-of-type) {
+        width: 270px;
+    }
+
+    .sign-up-home form input:last-of-type {
+        margin-left: 10%;
+    }
+}
+
+/* ============================================================================================================ */
+/* ============================================================================================================ */
+/* ============================================================================================================ */
+
+/* Login */
+.login-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-box h3 {
+    font-size: 35px;
+    color: var(--secColor);
+}
+
+.login-box form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.login-box form input:not(input:last-of-type) {
+    width: 420px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 5px;
+    outline: solid #818181 1px;
+}
+
+.login-box form input:last-of-type {
+    width: 400px;
+    text-decoration: none;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    color: white;
+    background-color: var(--secColor);
+    transition: var(--transition);
+    margin-bottom: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.login-box form input:last-of-type:hover {
+    background-color: var(--mainColor);
+}
+
+.forget-pass {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.forget-pass a {
+    color: var(--mainColor);
+    text-decoration: none;
+    font-size: 18px;
+    transition: var(--transition);
+}
+
+.forget-pass a:hover {
+    color: var(--secColor);
+}
+
+@media (max-width: 990px) {
+
+    .login-box form input:not(input:last-of-type),
+    .login-box form input:last-of-type {
+        width: 370px;
+    }
+
+    .forget-pass a {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .login-box form input:not(input:last-of-type),
+    .login-box form input:last-of-type {
+        width: 300px;
+    }
+
+    .forget-pass a {
+        margin-left: 57px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .login-box form input:not(input:last-of-type),
+    .login-box form input:last-of-type {
+        width: 270px;
+    }
+
+    .forget-pass a {
+        margin-left: 70px;
+        font-size: 14px;
+    }
+}
+
+/* ============================================================================================================ */
+/* ============================================================================================================ */
+/* ============================================================================================================ */
+
+/* Forget Password */
+
+.forget-pass-box {
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.forget-pass-box h3 {
+     font-size: 35px;
+    color: var(--secColor);
+}
+
+
+.forget-pass-box form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.forget-pass-box form input:not(input:last-of-type) {
+    width: 400px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 5px;
+    outline: solid #818181 1px;
+}
+
+.forget-pass-box form input:last-of-type {
+    width: 400px;
+    text-decoration: none;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    color: white;
+    background-color: var(--secColor);
+    transition: var(--transition);
+    margin-bottom: 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.forget-pass-box form input:last-of-type:hover {
+    background-color: var(--mainColor);
+}
+
+@media (max-width: 990px) {
+
+    .forget-pass-box form input:not(input:last-of-type),
+    .forget-pass-box form input:last-of-type {
+        width: 370px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .forget-pass-box form input:not(input:last-of-type),
+    .forget-pass-box form input:last-of-type {
+        width: 300px;
+    }
+
+    
+}
+
+@media (max-width: 480px) {
+
+    .forget-pass-box form input:not(input:last-of-type),
+    .forget-pass-box form input:last-of-type {
+        width: 270px;
+    }
+
+}

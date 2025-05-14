@@ -1,0 +1,160 @@
+:root {
+    --transition: all 0.3s;
+    --mainColor: #003b79;
+    --secColor: #01152b;
+    --thColor: #04e474;
+}
+
+/* ============================= */
+.paths h3 {
+    margin-left: 10px;
+    color: var(--secColor);
+    font-size: 20px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.paths-box {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.path {
+    border: 1px solid #acacac;
+    width: fit-content;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+
+.path:hover {
+    transform: translateY(-15px);
+}
+
+.path:hover .path-name {
+    color: var(--thColor);
+}
+
+.path:hover .path-count {
+    color: var(--mainColor);
+}
+
+
+@media (max-width: 990px) {
+    .paths-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .paths {
+      text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .paths-box {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+    .paths {
+      text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .paths-box {
+        grid-template-columns: repeat(1, 1fr);
+        margin-right: -158px;
+    }
+    .paths {
+      text-align: center;
+    }
+}
+
+/* Paths Img */
+.path .path-img {
+    background-position: top;
+    background-size: cover;
+    width: 340px;
+    aspect-ratio: 1.3/1;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.info-path {
+    padding-left: 15px;
+}
+
+.path .path-name {
+    color: var(--secColor);
+    font-size: 18px;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.path .path-count {
+    font-size: 17px;
+    color: #9b9b9b;
+    transition: var(--transition);
+}
+
+.path-img {
+    background-position: center;
+    background-size: cover;
+}
+
+.programming .path-img {
+    background-image: url(images/programming.jpg);
+}
+
+.social-ads .path-img {
+    background-image: url(images/social.jpg);
+}
+
+.graphic .path-img {
+    background-image: url(images/graphic.jpg);
+}
+
+.ve .path-img {
+    background-image: url(images/VE.jpg);
+}
+
+.content .path-img {
+    background-image: url(images/content-creation.jpg);
+}
+
+.hr .path-img {
+    background-image: url(images/hr.jpg);
+}
+
+.business .path-img {
+    background-image: url(images/business.jpg);
+}
+
+.ai .path-img {
+    background-image: url(images/ai.jpg);
+}
+
+.uiux .path-img {
+    background-image: url(images/uiux.jpg);
+}
+
+.motion .path-img {
+    background-image: url(images/motion.jpg);
+}
+
+.languages .path-img {
+    background-image: url(images/Languages.png);
+}
+.three-d .path-img {
+    background-image: url(images/3d.jpg);
+}
